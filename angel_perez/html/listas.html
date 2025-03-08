@@ -1,0 +1,270 @@
+<!-- 
+MATRICULA 202050898
+PEREZ AVILEZ ANGEL
+-->
+<html>
+<head>
+    <title>Listas en HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FAE3C6;
+            color: #4E342E;
+        }
+        header {
+            width: 70%;
+            background-color: #6d4c41;
+            color: #ffcc80;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 10px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out 1;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        nav {
+            width: 70%;
+            background-color: #5D4037;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 15px auto;
+            animation: fadeIn 1s ease-in-out 1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: #6d4c41;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 7px 15px;
+            background-color: #ffcc80;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #ffa500;
+            color: #f5f5d5;
+            transform: scale(1.05);
+        }
+        main {
+            background-color: #FFCC80;
+            padding: 35px;
+            border-radius: 10px;
+            width: 70%;
+            margin: 30px auto;
+            animation: fadeInUp 1s ease-in-out 1;
+        }
+        section {
+            width: 80%;
+            background-color: #FFECB3;
+            color: #4E342E;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        p, ul, ol, dl {
+            text-align: left;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        dl dt {
+            font-weight: bold;
+        }
+        dd, p{
+            margin-bottom: 12px;
+        }
+        footer {
+            width: 70%;
+            height: 40px;
+            background-color: #5D4037;
+            color: #FFF3E0;
+            margin: 15px auto;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out 1;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(15px); }
+            50% { opacity: 0.5; transform: translateY(7px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        #HOME {
+    width: 150px;
+}
+    </style>
+</head>
+<body>
+
+    <header><div class="HOME">
+             <a href="../index.html" class="icono_inicio">
+    <img src="../img/home.png" id="HOME">
+  </a>
+            </div>
+        <h1>Listas en HTML</h1>
+    </header>
+
+    <nav>
+        
+        <ul>
+            <li><a href="../html/formatos_de_texto.html">Formatos</a></li>
+            <li><a href="../html/listas.html">Listas</a></li>
+            <li><a href="../html/enlaces.html">Enlaces</a></li>
+            <li><a href="../html/tablas.html">Tablas</a></li>
+            <li><a href="../html/imagenes.html">Imágenes</a></li>
+            <li><a href="../html/audios.html">Audio</a></li>
+            <li><a href="../html/videos.html">Video</a></li>
+            <li><a href="../html/formularios.html">Formularios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="unordered">
+            <h2>Listas Desordenadas</h2>
+            <p>Quisque posuere luctus sapien eget viverra. Curabitur vel ante quis augue laoreet finibus non at ipsum. Curabitur velit est, congue quis tincidunt vitae, eleifend quis tellus.</p>
+            <ul>
+                <li>Argentina</li>
+                <li>Colombia</li>
+                <li>Venezuela</li>
+                <li>España</li>
+                <li>Inglaterra</li>
+                <li>Francia</li>
+                <li>Italia</li>
+                <li>Mexico</li>
+                <li>Brasil</li>
+                <li>Puerto Rico</li>
+                <li>Japon</li>
+            </ul>
+        </section>
+
+        <section id="ordered">
+            <h2>Listas Ordenadas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet erat nec tellus feugiat, ac imperdiet sem ornare. Curabitur vel ante quis augue laoreet finibus non at ipsum. Curabitur velit est, congue quis tincidunt vitae, eleifend quis tellus.</p>
+            <ol>
+                <li>Jalisco</li>
+                <li>Veracruz</li>
+                <li>Guanajuato</li>
+                <li>Colima</li>
+                <li>Michoacan</li>
+                <li>Puebla</li>
+                <li>Oaxaca</li>
+                <li>Baja California</li>
+                <li>Quintana Roo</li>
+                <li>Queretaro</li>
+            </ol>
+        </section>
+
+         <section> 
+                <h2>Listas mixtas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices, lectus quis ornare lacinia, massa purus dictum justo, nec auctor velit mauris eget nibh.</p>
+                <ol>
+                    <li>Tlaxcala</li>
+                    <ul>
+                        <li>Santana Ana Chiutempan</li>
+                        <li>San Luis Teolocholco</li>
+                        <li>Concla de Juan Cuamatzil</li>
+                        <li>Carmen Aztama</li>
+                    
+                    </ul>
+                    <li>Jalisco</li>
+                    <ul>
+                        <li>Puerto Vallarta</li>
+                        <li>Cabo Corrientes</li>
+                        <li>Tlaquepaque</li>
+                        <li>Tequila</li>
+                        <li>Apizaco</li>
+                        <li>Tetla de Ocampo</li>
+                    
+                    </ul>
+                    <li>Puebla
+                    <ul>
+                        <li>Atlixco</li>
+                        <li>Cholula</li>
+                        <li>Acajete</li>
+                        <li>Chignahuapan</li>
+                        <li>Zacatlan</li>
+                        <li>Amozoc</li>
+                        <li>Huachinango</li>
+                        <li>Cuautlanzingo</li>
+                        </ul>
+                    </li>
+                    <li>Veracruz</li>
+                    <ul>
+                        <li>Tierra blanca</li>
+                        <li>Boca del rio</li>
+                        <li>Cuatzacoalcos</li>
+                        <li>Poza Rica</li>
+                    
+                    </ul>
+                    
+                    <li>Oaxaca
+                        <ul>
+                            <li>Huajuapan</li>
+                            <li>Hierve el agua</li>
+                            <li>San Juan Chamula</li>
+                        
+                        </ul>
+                    
+                    </li>
+                
+                </ol>
+            </section>
+
+        <section>
+                <h2>Listas de descripcion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque lorem sit amet purus gravida, a placerat leo viverra. Suspendisse maximus sed lectus nec imperdiet. Donec vehicula nibh lectus, et scelerisque lorem porttitor et.</p>
+            <dl>
+                <dt>Republica</dt>
+                <dd>Praesent est dui, suscipit eget dui in, feugiat ullamcorper enim. Maecenas faucibus elit diam. Cras et sem lacus. Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem.</dd>
+                <dt>Estado</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis.  Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem.</dd>
+                <dt>Municipio</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis.  Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem.</dd>
+                <dt>Junta auxiliar</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis. Maecenas faucibus elit diam. Cras et sem lacus. Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus.</dd>
+                <dt>Delegacion</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis.  Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem. .</dd>
+                <dt>Colonia</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis. Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem. </dd>
+                <dt>Fraccionamiento</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor sem a nulla lacinia bibendum. Praesent sed lorem sed leo facilisis sagittis. Vivamus tempus lorem in libero vulputate mollis. Nam non interdum lectus. Sed et efficitur urna, nec vestibulum sem.</dd>
+                </dl>
+            </section>
+    </main>
+
+    <footer>
+        <h6>Elaborado por Pérez Avilez Ángel</h6>
+    </footer>
+
+</body>
+</html>
